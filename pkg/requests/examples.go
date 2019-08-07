@@ -43,7 +43,7 @@ func (ex *Examples) buildRequest(method string, data []string) (*Base, *RequestP
 	}
 
 	base := &Base{
-		Profile:        ex.Profile,
+		Profile:        &ex.Profile,
 		Method:         method,
 		SuppressOutput: true,
 		APIBaseURL:     ex.APIBaseURL,
@@ -471,7 +471,7 @@ func (ex *Examples) WebhookEndpointsList() WebhookEndpointList {
 	}
 
 	base := &Base{
-		Profile:        ex.Profile,
+		Profile:        &ex.Profile,
 		Method:         http.MethodGet,
 		SuppressOutput: true,
 	}
