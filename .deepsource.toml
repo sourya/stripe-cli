@@ -4,5 +4,5 @@ version = 1
 name = "go"
 enabled = true
 
-  [[analyzers.meta]]
+  [analyzers.meta]
   import_path = "github.com/jaipradeesh/stripe-cli"
